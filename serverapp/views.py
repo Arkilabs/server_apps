@@ -12,3 +12,8 @@ def home(request):
 def start(request):
     response = {'result': True}
     return HttpResponse(simplejson.dumps(response), mimetype='application/json')
+
+
+def stop(request):
+    response = {'result': True}
+    return HttpResponse(simplejson.dumps(response), mimetype='application/json')
